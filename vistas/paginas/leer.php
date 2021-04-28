@@ -62,7 +62,7 @@ $productos = ControllerForms::ControllerSelectRegisters(null, null);
 					?>
 
 				</form>		
-				<br>	
+				
 				<form method="post">
 
 					<input type="hidden" value="<?php echo $value["id"]; ?>" name="venderProducto">

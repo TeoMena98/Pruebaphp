@@ -113,6 +113,26 @@ class ModelForms{
 
 	}
 
+	static public function mdlShopProduct($tabla, $valor){
+	
+		$stmt = Conexion::connect()->prepare("UPDATE $tabla SET stock = stock -1 WHERE id = :id");
 
+		$stmt->bindParam(":id", $valor, PDO::PARAM_INT);
+
+		if($stmt->execute()){
+
+			return "ok";
+
+		}else{
+
+			print_r(Conexion::connect()->errorInfo());
+
+		}
+
+		$stmt->close();
+
+		$stmt = null;	
+
+	}
 
 }

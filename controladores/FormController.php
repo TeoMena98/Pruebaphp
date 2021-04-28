@@ -95,12 +95,12 @@ class ControllerForms{
 
 	public function ControllerShopProduct(){
 
-		if(isset($_POST["eliminarProducto"])){
+		if(isset($_POST["venderProducto"])){
 
 			$tabla = "producto";
-			$valor = $_POST["eliminarProducto"];
+			$valor = $_POST["venderProducto"];
 
-			$respuesta = ModelForms::mdlDeleteRegister($tabla, $valor);
+			$respuesta = ModelForms::mdlShopProduct($tabla, $valor);
 
 			if($respuesta == "ok"){
 

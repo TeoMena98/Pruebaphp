@@ -1,1 +1,1 @@
-# Prueba_Konecta
+# Prueba Konecta

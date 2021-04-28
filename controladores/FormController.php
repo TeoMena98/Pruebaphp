@@ -92,4 +92,35 @@ class ControllerForms{
 	}
 
 
+
+	public function ControllerShopProduct(){
+
+		if(isset($_POST["eliminarProducto"])){
+
+			$tabla = "producto";
+			$valor = $_POST["eliminarProducto"];
+
+			$respuesta = ModelForms::mdlDeleteRegister($tabla, $valor);
+
+			if($respuesta == "ok"){
+
+				echo '<script>
+
+					if ( window.history.replaceState ) {
+
+						window.history.replaceState( null, null, window.location.href );
+
+					}
+
+					window.location = "index.php?pagina=leer";
+
+				</script>';
+
+			}
+
+		}
+
+	}
+
+
 }

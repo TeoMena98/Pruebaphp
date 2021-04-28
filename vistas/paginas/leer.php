@@ -44,11 +44,13 @@ $productos = ControllerForms::ControllerSelectRegisters(null, null);
 				
 				<a href="index.php?pagina=editar&id=<?php echo $value["id"]; ?>" class="btn btn-warning"><i class="fas fa-pencil-alt"></i></a>
 
+			
 				</div>
 
 				<form method="post">
 
 					<input type="hidden" value="<?php echo $value["id"]; ?>" name="eliminarProducto">
+					
 					
 					<button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
 
@@ -59,7 +61,27 @@ $productos = ControllerForms::ControllerSelectRegisters(null, null);
 
 					?>
 
-				</form>			
+				</form>		
+				<br>	
+				<form method="post">
+
+					<input type="hidden" value="<?php echo $value["id"]; ?>" name="venderProducto">
+					
+
+					
+					
+					<button type="submit" class="btn btn-primary"><i class="fas fa-shopping-cart"></i></button>
+
+					<?php
+
+						$vender = new ControllerForms();
+						$vender -> ControllerShopProduct();
+
+					?>
+
+				</form>	
+
+			
 
 			</div>
 				

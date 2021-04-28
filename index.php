@@ -1,10 +1,10 @@
 <?php
 
-require_once "controladores/plantilla.controlador.php";
-require_once "controladores/formularios.controlador.php";
-require_once "modelos/formularios.modelo.php";
+require_once "controladores/TemplateController.php";
+require_once "controladores/FormController.php";
+require_once "modelos/FormModel.php";
 
-$plantilla = new ControladorPlantilla();
-$plantilla -> ControllerTraerPlantilla();
+$plantilla = new TemplateController();
+$plantilla -> ControllerGetTemplate();
 
 

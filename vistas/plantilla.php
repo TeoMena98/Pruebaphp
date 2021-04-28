@@ -58,13 +58,13 @@ session_start();
 				<?php if ($_GET["pagina"] == "leer"): ?>
 
 					<li class="nav-item">
-						<a class="nav-link active" href="index.php?pagina=leer">Leer datos</a>
+						<a class="nav-link active" href="index.php?pagina=leer">Ventas</a>
 					</li>
 
 				<?php else: ?>
 
 					<li class="nav-item">
-						<a class="nav-link" href="index.php?pagina=leer">Leer datos</a>
+						<a class="nav-link" href="index.php?pagina=leer">Ventas</a>
 					</li>
 					
 				<?php endif ?>
@@ -79,7 +79,7 @@ session_start();
 
 			
 				<li class="nav-item">
-					<a class="nav-link" href="index.php?pagina=leer">Leer Datos</a>
+					<a class="nav-link" href="index.php?pagina=leer">Ventas</a>
 				</li>
 
 				

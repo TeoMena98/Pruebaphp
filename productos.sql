@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-12-2020 a las 01:13:10
+-- Tiempo de generación: 28-04-2021 a las 22:41:38
 -- Versión del servidor: 10.4.17-MariaDB
--- Versión de PHP: 8.0.0
+-- Versión de PHP: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -44,31 +44,7 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`id`, `nombre`, `referencia`, `precio`, `peso`, `categoria`, `stock`, `fecha_creacion`, `fecha_ultima_venta`) VALUES
-(3, 'escoba grande', '2211', 20000, 2, 'hogar y aseo', 1, '2020-12-06 00:01:29', '2020-12-04 00:00:00'),
-(4, 'puerta grande', '22', 22, 22, 'casa y hogar', 1111, '2020-12-06 00:09:30', '2020-12-05 00:00:00');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `registros`
---
-
-CREATE TABLE `registros` (
-  `id` int(11) NOT NULL,
-  `nombre` text NOT NULL,
-  `email` text NOT NULL,
-  `password` varchar(10) NOT NULL,
-  `fecha` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `registros`
---
-
-INSERT INTO `registros` (`id`, `nombre`, `email`, `password`, `fecha`) VALUES
-(1, 'María del rio', 'maria@hotmail.com', 'asfasdgadg', '2019-10-25 23:27:07'),
-(2, 'María del mar', 'maria@hotmail.com', '123456', '2019-10-23 21:29:13'),
-(10, 'david', 'potercongafas@gmail.com', '1234', '2020-12-05 22:26:31');
+(13, 'AAaaa', 'asasas', 123, 222, 'asdasdas', 21, '2021-04-28 19:50:18', '2021-04-28 00:00:00');
 
 --
 -- Índices para tablas volcadas
@@ -81,12 +57,6 @@ ALTER TABLE `producto`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `registros`
---
-ALTER TABLE `registros`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -94,13 +64,7 @@ ALTER TABLE `registros`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT de la tabla `registros`
---
-ALTER TABLE `registros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
